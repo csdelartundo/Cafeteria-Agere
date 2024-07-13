@@ -1,0 +1,33 @@
+.cube {
+    @include position;
+    width: 100px;
+    height: 100px;
+    top: 445px;
+    left: 880px;
+
+    &__orange {
+        @include position;
+        background-color: #E4572E;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        top: 26em;
+        left: 54em;
+    }
+
+    &__yellow {
+        @include position;
+        background-color: #f5a316;
+        z-index: auto;
+        width: 100px;
+        height: 100px;
+        top: 27em;
+        left: 55em;
+    }
+
+    &__orange i {
+        color: #fff;
+        font-size: 48px;
+        padding: 30px;
+    }
+}

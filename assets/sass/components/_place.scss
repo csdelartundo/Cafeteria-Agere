@@ -1,0 +1,52 @@
+.place {
+    display: flex;
+    padding: 9px;
+
+    &__rectangle {
+        width: 509px;
+        height: 190px;
+        background-color: #3c91e6;
+    }
+
+    &__map-img {
+        @include index;
+        width: 25%;
+        height: 180px;
+        left: 475px;
+        top: 580px;
+    }
+
+    &__img {
+        width: 35%;
+    }
+
+    &__img-coffee {
+        @include index;
+        width: 80px;
+        height: 120px;
+        top: 543px;
+        left: 900px;
+    }
+
+}
+
+.text {
+    width: 40%;
+    max-width: 660px;
+    padding: 30px;
+
+
+    &__title {
+        max-width: 200px;
+        padding: 20px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: start;
+    }
+
+    &__subtitle {
+        max-width: 400px;
+        justify-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,66 @@
+.navbar {
+    @include display;
+    width: 100%;
+
+    &__logo {
+        width: 100%;
+        max-width: 50px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    &__left {
+        @include display;
+    }
+
+    &__buttons {
+        @include display;
+        margin-left: auto;
+        max-width: 20em;
+    }
+
+    &__menu {
+        max-width: 20em;
+        padding: 0;
+        color: #A2A2A2;
+        text-align: center;
+    }
+
+    &__menu:hover {
+        color: #000
+    }
+
+    &__button {
+        justify-content: flex-end;
+        margin-left: 100px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        max-width: 30;
+
+        &--primary {
+            background-color: #fff;
+            border: 1px solid #989797;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        &--secondary {
+            background-color: #4CA866;
+            border: 1px solid #4CA866;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.navbar__button--primary:hover {
+    border: 1px solid #000;
+}
+
+.navbar__button--secondary:hover {
+    background-color: #9DCFAB;
+    color: #454545
+}

@@ -1,0 +1,21 @@
+@mixin position {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin display {
+    display: flex;
+    align-items: center;
+}
+
+@mixin index($position: absolute, $z-index: 2, $object-fit:cover) {
+    position: $position;
+    z-index: $z-index;
+    object-fit: $object-fit;
+}
+
+@mixin justify {
+    display: flex;
+    justify-content: space-around;
+}

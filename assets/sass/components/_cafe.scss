@@ -1,0 +1,30 @@
+.cafe {
+    @include display;
+    width: 100%;
+
+    &__img {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+        margin: 0;
+        z-index: -1;
+    }
+    &__text {
+        width: 40%; 
+        padding: 20px; 
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-size: 80px;
+        margin: 0;
+    }
+    &__subtitle {
+        font-size: 25px;
+        margin: 0;
+        padding: 10px;
+}
+}

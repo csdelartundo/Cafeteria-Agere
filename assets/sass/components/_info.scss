@@ -1,0 +1,31 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    left: 460px;
+    top: 430px;
+    background-color: #fff;
+    max-width: 420px;
+    @include index($position,$z-index);
+
+    &__titles {
+        @include justify;
+    }
+
+    &__title {
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    &__subtitles {
+        @include justify;
+        padding: 5px;
+    }
+
+    &__subtitle {
+        max-width: 100px;
+        font-size: 10px;
+        padding: 10px;
+    }
+}
